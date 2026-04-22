@@ -5,7 +5,7 @@ configure terminal
 hostname R1
 
 interface f0/0
-ip address 192.168.X.X 255.255.255.0
+ip address 192.168.1.1 255.255.255.0
 no shutdown
 
 ! ACL Rules
@@ -27,5 +27,6 @@ interface f0/0
 
 overall, in this project i simply restrict the pc1 to access server htpp request (port 80). However, pc1 can access htpps (port 443).
 I applied extended ACL; therefore, it was configured in router one (IN). This project is focused on security of an organization and how to configure ACL to restrict specific access.
-ip address 192.168.X.X 255.255.255.0
+ip address 192.168.2.1
+255.255.255.0
 no shutdown
